@@ -1,0 +1,17 @@
+.container{
+    padding-top: 50px;
+}
+.row{
+    padding-bottom:30px;
+}
+.input-group{
+    padding-bottom: 20px;
+}
+.btn{
+    max-width: auto;
+    margin: auto;
+}
+.col-sm{
+    padding-bottom: 15px;
+   
+}
