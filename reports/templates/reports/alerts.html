@@ -11,7 +11,7 @@
        <div id="error-msg" class="alert alert-danger" role="alert">
                 ! Dates Cannot be Empty
         </div>
-       <h2>Alerts</h2>
+       <h2 style="color: #4e73df;">Alerts</h2>
 
    
         <div class="row">
@@ -40,35 +40,39 @@
             <div class="col-sm">
                 <div class="input-group">
                 <div class="input-group-prepend">
-                 <span class="input-group-text">Alert Type</span>
+                 <span class="input-group-text"
+                 style="background-color: #4e73df; color:white">Alert Type</span>
                 </div>
-                <select class="custom-select" id ="alert-type">
-                    <option   value = "geo-fence-alert">geo-fence-alert</option>
+                <select class="custom-select" id ="alert-type"
+                >
+                    <option   value = "100">geo-fence-alert</option>
                     <option  value = "speed-violation-alert" >speed-violation-alert</option>
                     <option  value = "device-tampering-alert" >device-tampering-alert</option>
-                    <option  value = "emergency-alert" >emergency-alert</option>
-                    <option   value = "all" selected >All</option>
+                    <option  value = "102" >emergency-alert</option>
+                    <option   value = "" selected >All</option>
                 </select>
             </div>
             </div>
 
             
             <div class="col-sm">
-            <button type = "button" class="btn btn-secondary btn-sm btn-block" id = "user-search-btn">Search</button>
+            <button type = "button" class="btn btn-secondary btn-sm btn-block" id = "user-search-btn"
+            style="background-color: #4e73df; color:white">Search</button>
             </div>
         </div>
 
 
        
         <table class="row">
-            <table id="example" class="table table-striped" style="width:100%">
+            <table id="example" class="table" >
                 <thead>
                     <tr>
-                        <th scope="row">Date</th>
-                        <th scope="row">Busno</th>
-                        <th scope="row">Driver_id</th>
-                        <th scope="row">Driver_name</th>
-                        <th scope="row">Alert Type</th>
+                        <th scope="row">IMEI</th>
+                        <th scope="row">alertCode</th>
+                        <th scope="row">alertDate</th>
+                        <th scope="row">alertId</th>
+                        <th scope="row">description</th>
+                        <th scope="row">smsStatus</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -40,7 +40,7 @@ $(document).ready(function () {
           },
         },
         {
-          data: "runHrs",
+          data: "distance",
         },
       ],
       dom: "Bfrtip",
@@ -49,7 +49,7 @@ $(document).ready(function () {
   }
   function getDataFromApi(start, end, routeId) {
     var url =
-      "http://ec2-3-7-131-60.ap-south-1.compute.amazonaws.com/reports/uptime";
+      "http://ec2-3-7-131-60.ap-south-1.compute.amazonaws.com/reports/distance";
     let config = {
       headers: {
         Authorization:

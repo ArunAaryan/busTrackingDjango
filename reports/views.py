@@ -29,3 +29,16 @@ def fleetreports(request):
         'title':'FleetReports'
     }
     return render(request, 'reports/fleetreports.html',context)
+
+def distance(request):
+    context = {
+        'title':'DistanceReports'
+    }
+    return render(request, 'reports/distance.html',context)
+
+
+def routes(request):
+    context={
+        'title':'RouteReport'
+    }
+    return render(request, 'reports/routes.html',context)

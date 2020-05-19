@@ -2,19 +2,14 @@
 
 {% block head %}
 {% load static %}
-<script src="{% static 'reports/js/deviceUptime.js'%}"></script>
-<link rel = "stylesheet" type="text/css" href = "{% static 'reports/css/deviceUptime.css' %}">
+<script src="{% static 'reports/js/distance.js'%}"></script>
+<link rel = "stylesheet" type="text/css" href = "{% static 'reports/css/distance.css' %}">
 {% endblock head %}
-    
-  
-    {% block content %}
-    
-  
-
-    <div class = "container" style="padding-top:20px">
+{% block content %}
+     <div class = "container" style="padding-top:20px">
         <div id="error-msg" class="alert alert-danger" role="alert"></div>
     
-        <h3 style="color: #4e73df;">Device Uptime Hours</h3>
+        <h3 style="color: #4e73df;">Distance Travelled</h3>
         
         <div class="row">
 
@@ -61,7 +56,7 @@
         <thead >
             <tr>
                 <th scope="row" >Date</th>
-                <th scope="row" >Run Time</th>
+                <th scope="row" >Distance</th>
                 
             </tr>
         </thead>
@@ -72,8 +67,3 @@
  </div>
     {% endblock content %}
     
-    
-
-
-
-

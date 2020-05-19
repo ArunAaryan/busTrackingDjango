@@ -2,7 +2,7 @@
 {% load static %}
 {% block head %}
 {% load static %}
-<script src="{% static 'reports/js/fleetsummary.js'%}"></script>
+<script src="{% static 'reports/js/fleetreports.js'%}"></script>
 <link rel = "stylesheet" type="text/css" href = "{% static 'reports/css/fleetreports.css' %}">
 {% endblock head %}
 {% block content %}
@@ -11,39 +11,54 @@
   ! Dates Cannot be Empty
 </div>
     <div>
-    <h2>Fleet Summary </h2>
+    <h2 style="color: #4e73df;">Fleet Reports </h2>
     </div>
 
     <div class="row">
         <div class="col-sm">
             <div class="input-group ">
                 <div class="input-group-prepend">
-                     <span class="input-group-text" id="basic-addon1">Bus No</span>
+                     <span class="input-group-text" id="basic-addon1"
+                     style="background-color: #4e73df; color:white">Bus No</span>
                 </div>
                 <input id="bus_id"type="text" class="form-control" placeholder="busno" aria-label="Username" aria-describedby="basic-addon1">
             </div>
             
         </div>
 
-        
+        <div class="input-group date  col-sm"  data-target-input="nearest">
+                            <span class="fromto">From: </span>
+                            <input type="text" id="start_date"class="form-control datetimepicker-input" data-target="#start_date"/>
+                            <div class="input-group-append" data-target="#start_date" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+        </div>
+   
+        <div class="input-group date col-sm"  data-target-input="nearest">
+                            <span class="fromto">To: </span>
+                            <input type="text" id="end_date"class="form-control datetimepicker-input" data-target="#end_date"/>
+                            <div class="input-group-append" data-target="#end_date" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+        </div>
         
     </div>
 
         <div class="row">
         
-        <button type="button" id="user-search-btn" class="btn btn-secondary btn-block">Search</button>
+        <button type="button" id="user-search-btn" class="btn  btn-block"
+        style="background-color: #4e73df; color:white">Search</button>
         </div>
 
         <div class="row">
             <table id="example" class="table" style="width:100%">
         <thead>
             <tr>
-                <th scope="row" >VehicleNo</th>
                 <th scope="row" >Date</th>
-                <th scope="row" >Time</th>
                 <th scope="row" >Speed</th>
-                <th scope="row" >Location</th>
-                <th scope="row" >BattertStatus</th>
+                <th scope="row" >latitude</th>
+                <th scope="row" >longitude</th>
+                <th scope="row" >BatteryStatus</th>
                 <th scope="row" >Ignition</th>
             </tr>
         </thead>

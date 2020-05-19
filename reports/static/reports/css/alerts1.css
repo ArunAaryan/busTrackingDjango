@@ -1,17 +1,28 @@
-.container{
+.container {
     padding-top: 50px;
 }
-.row{
-    padding-bottom:30px;
+
+.row {
+    padding-bottom: 30px;
 }
-.input-group{
+
+.input-group {
     padding-bottom: 20px;
 }
-.btn{
+
+.btn {
     max-width: auto;
     margin: auto;
+    background-color: #4e73df;
+    color: white
 }
-.col-sm{
+
+.col-sm {
     padding-bottom: 15px;
-   
+
+}
+
+.btn-secondary {
+    background-color: #4e73df;
+    color: white
 }

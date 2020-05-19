@@ -5,5 +5,7 @@ urlpatterns = [
     path('deviceuptime', views.deviceuptime, name='deviceuptime'),
     path('alerts', views.alerts, name='alerts'),
     path('fleetsummary', views.fleetsummary, name = 'fleetsummary'),
-    path('fleetreports', views.fleetreports, name='fleetreports')
+    path('fleetreports', views.fleetreports, name='fleetreports'),
+    path('distance',views.distance,name='distance'),
+    path('routes',views.routes,name="routes")
 ]
